@@ -23,6 +23,9 @@ body {
 
 }
 @media (max-width:750px) {
+  .container{
+    width: 90%;
+  }
   .btn{
     height: 100px!important;
     width: 100px!important;
@@ -30,6 +33,9 @@ body {
 
 }
 @media (max-width:480px) {
+  .container{
+    width: 100%;
+  }
   .btn{
     height: 75px!important;
     width: 75px!important;
