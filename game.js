@@ -2,20 +2,12 @@ var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
 
-// var started = false;
 var level = 0;
-$(document).one("click",function (){
+$("h1").one("click",function (){
     nextSequence();
     $("#level-title").text("Level " + level);
-
     });
-// $("body").click(function() {
-//   if (!started) {
-//     $("#level-title").text("Level " + level);
-//     nextSequence();
-//     started = true;
-//   }
-// });
+function
 $(".btn").click(function() {
   var userChosenColour = this.id;
   userClickedPattern.push(userChosenColour);
@@ -34,14 +26,12 @@ $(".btn").click(function() {
       $("body").removeClass("game-over");
     }, 200);
     $("h1").text("Game Over, Restart");
-    setTimeout(function(){
-      restart();
-    },100);
 
-  }
+        restart();
+    }
   playSound(userChosenColour);
   animatePress(userChosenColour);
-})
+});
 
 function nextSequence() {
   level++;
@@ -67,12 +57,9 @@ function animatePress(currentColour) {
   }, 100);
 }
 function restart(){
-   level = 0;
-  gamePattern = [];
-  userClickedPattern = [];
-  $(document).one("click",function (){
-    nextSequence();
-    $("#level-title").text("Level " + level);
+  $(('h1')).one("click",function (){
+      document.location.reload();
+    // $("#level-title").text("Level " + level);
+});
 
-    });
 }
