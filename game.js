@@ -7,7 +7,7 @@ $("h1").one("click",function (){
     nextSequence();
     $("#level-title").text("Level " + level);
     });
-function
+
 $(".btn").click(function() {
   var userChosenColour = this.id;
   userClickedPattern.push(userChosenColour);
