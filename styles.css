@@ -27,8 +27,9 @@ body {
     width: 90%;
   }
   .btn{
-    height: 100px!important;
-    width: 100px!important;
+margin: 15px!important;
+    height: 125px!important;
+    width: 125px!important;
 border: 5px solid black!important;
   }
 
@@ -38,8 +39,9 @@ border: 5px solid black!important;
     width: 100%;
   }
   .btn{
-    height: 75px!important;
-    width: 75px!important;
+margin: 15px!important;
+    height: 100px!important;
+    width: 100px!important;
 border: 5px solid black!important;
   }
 
