@@ -39,7 +39,7 @@ body {
   .btn{
     height: 75px!important;
     width: 75px!important;
-border: 5px solid black;
+border: 5px solid black!important;
   }
 
 }
