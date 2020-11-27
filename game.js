@@ -1,13 +1,20 @@
 var buttonColors = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
+function neznauPochemuNoRabotaet (){
+
+  if (gamePattern.length != 0 ){
+    main();
+  };};
 
 var level = 0;
 $("h1").one("click",function (){
     nextSequence();
     $("#level-title").text("Level " + level);
+    neznauPochemuNoRabotaet();
     });
 
+function main (){
 $(".btn").click(function() {
   var userChosenColour = this.id;
   userClickedPattern.push(userChosenColour);
@@ -27,12 +34,13 @@ $(".btn").click(function() {
     }, 200);
     $("h1").text("Game Over, Restart");
 
+
         restart();
     }
   playSound(userChosenColour);
   animatePress(userChosenColour);
 });
-
+}
 function nextSequence() {
   level++;
   $("#level-title").text("Level " + level);
@@ -42,6 +50,7 @@ function nextSequence() {
   $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
   userClickedPattern = [];
+
 }
 
 
@@ -63,3 +72,4 @@ function restart(){
 });
 
 }
+
