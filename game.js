@@ -13,7 +13,7 @@ $("h1").one("click",function (){
     $("#level-title").text("Level " + level);
     neznauPochemuNoRabotaet();
     });
-
+var time;
 function main (){
 $(".btn").click(function() {
   var userChosenColour = this.id;
@@ -21,9 +21,11 @@ $(".btn").click(function() {
 
   if (gamePattern[userClickedPattern.length-1] === userClickedPattern[userClickedPattern.length-1]){
     if (gamePattern.length === userClickedPattern.length){
-      setTimeout(function() {
-        nextSequence();
-      }, 1000);
+         time = setTimeout(function() {
+          nextSequence();
+        }, 1000);
+
+
     }
   }
   else {
@@ -34,7 +36,7 @@ $(".btn").click(function() {
     }, 200);
     $("h1").text("Game Over, Restart");
 
-
+        clearTimeout(time);
         restart();
     }
   playSound(userChosenColour);
