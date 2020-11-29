@@ -77,6 +77,7 @@ border: 5px solid black!important;
 }
 
 .pressed {
+transform: scale(1.2);
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
