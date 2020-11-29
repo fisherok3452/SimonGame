@@ -13,7 +13,7 @@ $("h1").one("click",function (){
     setTimeout(function() {
           nextSequence();
         }, 1250);
-   $("#level-title").text("Level " + level+1);
+   $("#level-title").text("Level " + level++);
    setTimeout (function () {
     neznauPochemuNoRabotaet();}, 1250);
     });
