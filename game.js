@@ -60,7 +60,7 @@ function nextSequence() {
 $("#" + randomChosenColour).addClass("scale1");
       setTimeout(function(){
       $("#" + randomChosenColour).removeClass("scale1");
-}, 200);
+}, 400);
 }
 
 
