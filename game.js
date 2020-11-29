@@ -15,7 +15,7 @@ $("h1").one("click",function (){
         }, 1250);
 
    setTimeout (function () {
-    neznauPochemuNoRabotaet();}, 1250);
+    neznauPochemuNoRabotaet();}, 1300);
     });
 var time;
 function main (){
