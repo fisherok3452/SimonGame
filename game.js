@@ -9,12 +9,13 @@ function neznauPochemuNoRabotaet (){
 
 var level = 0;
 $("h1").one("click",function (){
-level =1;
+
     setTimeout(function() {
           nextSequence();
         }, 1250);
-   // $("#level-title").text("Level " + level);
-    neznauPochemuNoRabotaet();
+   $("#level-title").text("Level " + level+1);
+   setTimeout (function () {
+    neznauPochemuNoRabotaet();}, 1250);
     });
 var time;
 function main (){
