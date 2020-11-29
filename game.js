@@ -9,11 +9,11 @@ function neznauPochemuNoRabotaet (){
 
 var level = 0;
 $("h1").one("click",function (){
-
+   $("#level-title").text("Level 1");
     setTimeout(function() {
           nextSequence();
         }, 1250);
-   $("#level-title").text("Level " + level++);
+
    setTimeout (function () {
     neznauPochemuNoRabotaet();}, 1250);
     });
