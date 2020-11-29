@@ -23,7 +23,7 @@ $(".btn").click(function() {
     if (gamePattern.length === userClickedPattern.length){
          time = setTimeout(function() {
           nextSequence();
-        }, 1500);
+        }, 1250);
 
 
     }
