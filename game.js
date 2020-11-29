@@ -9,7 +9,7 @@ function neznauPochemuNoRabotaet (){
 
 var level = 0;
 $("h1").one("click",function (){
-    time = setTimeout(function() {
+    setTimeout(function() {
           nextSequence();
         }, 1250);
     $("#level-title").text("Level " + level);
