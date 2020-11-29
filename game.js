@@ -54,6 +54,9 @@ function nextSequence() {
   userClickedPattern = [];
 
 $("#" + randomChosenColour).addClass("scale1");
+      setTimeout(function(){
+      $("#" + randomChosenColour).removeClass("scale1");
+}, 100);
 }
 
 
