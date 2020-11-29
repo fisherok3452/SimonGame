@@ -53,7 +53,7 @@ function nextSequence() {
   playSound(randomChosenColour);
   userClickedPattern = [];
 
-$(".btn").addClass("scale1");
+$("#" + randomChosenColour).addClass("scale1");
 }
 
 
